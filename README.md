@@ -7,8 +7,4 @@ PDF.js is an open-source JavaScript library developed by Mozilla.
 It enables parsing and rendering of PDF files entirely in the browser, 
 without the need for external plugins or server-side processing.
 
-Features
-Upload a PDF and extract its full text
-Works entirely in the browser
-No dependencies or setup needed
 
