@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF convert</title>
+</head>
+<body>
+    <h1>load a pdf file</h1>
+    <div>
+        <!--A label that wraps the inner button-->
+        <label for="PDFFile">choose file</label>
+        <input type="file" id="PDFFile" onchange="createAndDownloadTXT(event)" accept=".pdf" value="choose a file"/>
+    </div>
+    <!--content of PDF-->
+    <div id="PDFContent"> </div>
+    <script type="module">
+        // modules import - from mozilla
+        import * as pdfjsLib from 'https://mozilla.github.io/pdf.js/build/pdf.mjs';
+  
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.mjs';
+      </script>
+
+        <script type='text/javascript' src="extractText.js"></script>
+        <script>
+             //listener event- while there is a new pdf 
+             document.getElementById("PDFFile").addEventListener("change", createAndDownloadTXT);
+        </script>
+        <link rel="stylesheet" href="fileDesign.css" />
+</body>
+</html>

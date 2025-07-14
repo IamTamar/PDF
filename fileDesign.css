@@ -1,0 +1,35 @@
+input[type="file"] {
+    display: none;
+  }
+  
+  input[type="file"]:hover {
+    background-color: #574fd6;       
+  }
+
+  h1{
+    margin: auto;
+    color: #574fd6;
+    text-align: center;
+  }
+
+  label{
+    background-color: #6c63ff;     
+    color: white;                   
+    padding: 10px 20px;              
+    border-radius: 8px;         
+    font-size: 16px;              
+    transition: background-color 0.3s ease;  /* ריחוף */
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+    width: 40%;
+    height: 30%;
+    text-align: center;
+  }
+  
+  div[id="PDFContent"]{
+    margin: auto;
+    margin-top: 20px;
+    color: black;
+  }
